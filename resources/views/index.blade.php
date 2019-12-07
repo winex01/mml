@@ -5,7 +5,8 @@
 	@include('services')
 	@include('why-us')
 	@include('portfolio')
-	@include('clients')
+	@include('testimonials')
 	@include('team')
+	@include('clients')
 	@include('contacts')
 @endsection
