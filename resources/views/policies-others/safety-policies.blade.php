@@ -8,7 +8,6 @@
       <h3>SAFETY POLICIES</h3>
     </header>
 
-    <!-- about -->
     <div class="row about-container">
       <div class="col-lg-6 content order-lg-1 order-2">
         {!! html_entity_decode(setting('site.safety_policies')) !!}

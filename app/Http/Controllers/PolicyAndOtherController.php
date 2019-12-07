@@ -31,4 +31,11 @@ class PolicyAndOtherController extends Controller
         ]);
     }
 
+    public function organizationalChart()
+    {
+        return view($this->folder.'.organizational-chart', [
+            'section' => $this->section
+        ]);   
+    }
+
 }

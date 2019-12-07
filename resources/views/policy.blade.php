@@ -33,7 +33,7 @@
                 <i class="fa fa-object-group"></i>
               <div class="card-body">
                 <h5 class="card-title">Organizational Chart</h5>
-                <a href="#" class="readmore">More Details </a>
+                <a href="{{ route('organizational.chart') }}" class="readmore">More Details </a>
               </div>
             </div>
           </div>
