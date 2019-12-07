@@ -3,11 +3,7 @@
   ============================-->
   <header id="header" class="fixed-top">
     <div class="container">
-      <div class="logo float-left">
-        <!-- Uncomment below if you prefer to use an image logo -->
-        {{-- <h1 class="text-light"><a href="#header"><span>MML</span></a></h1> --}}
-        <a href="#intro" class=""><img src="img/logo.png" alt="" class="img-fluid"></a>
-      </div>
+      @include('layouts.site-logo')
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
