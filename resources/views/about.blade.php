@@ -8,22 +8,7 @@
     <!-- about -->
     <div class="row about-container">
       <div class="col-lg-6 content order-lg-1 order-2">
-        <p>MML Engineering Services and Supply, was established in November 2016 . The company was personally managed by the Owner Mr. Marlou Asis Laurente.</p>
-        <p>
-        Having been graduated in Bachelor of Science in
-        Marine Transportation with several years of
-        ONBOARD experience and besides the owner had
-        successfully managed their Family Business which
-        engaged in variuos field in CONTRACTING/TRADING
-        and SERVICES.
-        </p>
-        <p>
-          Mr. Laurente decided to separate from their
-          family business and established MML Engineering
-          Services and Supply which is currently undertaking
-          several projects both in Civil/structural, Marine and
-          Industrial.
-        </p>
+        {!! setting('site.about_us') !!}
       </div>
 
       <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
@@ -41,10 +26,8 @@
         <div class="icon-box wow fadeInUp">
           <div class="icon"><i class="fa fa-shopping-bag"></i></div>
           <h4 class="title"><a href="">VISION</a></h4>
-          <p class="description">To become one of the best dependable companies in
-            providing the best quality service in the field of engineering
-            and marine services and producing the best results for the
-            clients.
+          <p class="description">
+            {!! setting('site.vission') !!}
           </p>
         </div>
 
@@ -52,9 +35,7 @@
           <div class="icon"><i class="fa fa-photo"></i></div>
           <h4 class="title"><a href="">MISSION</a></h4>
           <p class="description">
-            We are committed in creating positive business
-            relationships in helping the clients throughout the course of
-            the projects.
+            {!! setting('site.mission') !!}
           </p>
         </div>
 
@@ -62,9 +43,7 @@
           <div class="icon"><i class="fa fa-bar-chart"></i></div>
           <h4 class="title"><a href="">OBJECTIVES</a></h4>
           <p class="description">
-            To provide quality services at a competitive market price
-            and safeguard the customer-clients with a well trained
-            workforce.
+            {!! setting('site.objective') !!}
           </p>
         </div>
       </div>
