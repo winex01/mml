@@ -3,7 +3,7 @@
 @section('content')
 	@include('about')
 	@include('services')
-	@include('why-us')
+	@include('policy')
 	@include('portfolio')
 	@include('testimonials')
 	@include('team')
