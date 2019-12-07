@@ -25,7 +25,7 @@
       <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
         <div class="icon-box wow fadeInUp">
           <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-          <h4 class="title"><a href="">VISION</a></h4>
+          <h4 class="title"><a href="javascript:void(0)">VISION</a></h4>
           <p class="description">
             {!! setting('site.vission') !!}
           </p>
@@ -33,7 +33,7 @@
 
         <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
           <div class="icon"><i class="fa fa-photo"></i></div>
-          <h4 class="title"><a href="">MISSION</a></h4>
+          <h4 class="title"><a href="javascript:void(0)">MISSION</a></h4>
           <p class="description">
             {!! setting('site.mission') !!}
           </p>
@@ -41,7 +41,7 @@
 
         <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
           <div class="icon"><i class="fa fa-bar-chart"></i></div>
-          <h4 class="title"><a href="">OBJECTIVES</a></h4>
+          <h4 class="title"><a href="javascript:void(0)">OBJECTIVES</a></h4>
           <p class="description">
             {!! setting('site.objective') !!}
           </p>
