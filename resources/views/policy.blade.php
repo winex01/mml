@@ -12,8 +12,8 @@
                 <i class="fa fa-diamond"></i>
               <div class="card-body">
                 <h5 class="card-title">SAFETY POLICIES</h5>
-                {{-- <p class="card-text">Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore officiis aut voluptatibus.</p> --}}
-                <a href="#" class="readmore">More Details </a>
+                
+                <a href="{{ route('safety.policies') }}" class="readmore">More Details </a>
               </div>
             </div>
           </div>
@@ -23,7 +23,6 @@
                 <i class="fa fa-language"></i>
               <div class="card-body">
                 <h5 class="card-title">Quality Policy Statement</h5>
-                {{-- <p class="card-text">Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur.</p> --}}
                 <a href="#" class="readmore">More Details </a>
               </div>
             </div>
@@ -34,7 +33,6 @@
                 <i class="fa fa-object-group"></i>
               <div class="card-body">
                 <h5 class="card-title">Organizational Chart</h5>
-                {{-- <p class="card-text">Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex. </p> --}}
                 <a href="#" class="readmore">More Details </a>
               </div>
             </div>
@@ -45,7 +43,6 @@
                 <i class="fa fa-envelope-open-o"></i>
               <div class="card-body">
                 <h5 class="card-title">DTI Business Permit</h5>
-                {{-- <p class="card-text">Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex. </p> --}}
                 <a href="#" class="readmore">More Details </a>
               </div>
             </div>

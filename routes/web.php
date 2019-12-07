@@ -13,6 +13,7 @@
 
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/safety-policies', 'SafetyPolicyController@index')->name('safety.policies');
 
 
 Route::group(['prefix' => 'admin'], function () {

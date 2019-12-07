@@ -11,6 +11,7 @@
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#why-us">Policies & Others</a></li>
+          <li><a href="#contact">Contact Us</a></li>
           {{-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -28,7 +29,6 @@
               <li><a href="#">Drop Down 5</a></li>
             </ul>
           </li> --}}
-          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav><!-- .main-nav -->
       
