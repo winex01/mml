@@ -9,7 +9,7 @@
       </div>
 
       <div class="intro-info">
-        <h2>We provide<br><span>Best Quality</span><br> service!</h2>
+        {!! setting('site.description') !!}
         <div>
           <a href="#about" class="btn-get-started scrollto">Get Started</a>
           <a href="#services" class="btn-services scrollto">Our Services</a>
