@@ -23,7 +23,7 @@
                 <i class="fa fa-language"></i>
               <div class="card-body">
                 <h5 class="card-title">Quality Policy Statement</h5>
-                <a href="#" class="readmore">More Details </a>
+                <a href="{{ route('quality.policy.statement') }}" class="readmore">More Details </a>
               </div>
             </div>
           </div>
