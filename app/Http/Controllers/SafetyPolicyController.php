@@ -14,7 +14,8 @@ class SafetyPolicyController extends Controller
     public function index()
     {
         //
-        return view('policies-others.safety-policies');
+        $section = '#why-us';
+        return view('policies-others.safety-policies', compact('section'));
     }
 
 }

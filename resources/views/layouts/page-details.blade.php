@@ -5,7 +5,7 @@
       @include('layouts.site-logo')
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="{{ route('home') }}">Back</a></li>
+          <li class="active"><a href="{{ route('home').$section }}">Back</a></li>
         </ul>
       </nav><!-- .main-nav -->
     </div>
