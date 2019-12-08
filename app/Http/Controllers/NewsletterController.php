@@ -18,10 +18,14 @@ class NewsletterController extends Controller
         //
         $newsletter = Newsletter::where('email', $request->email)->first();
         if (empty($newsletter)) {
-            toastr()->success('Thank you for subscribing.');
-            Newsletter::create([
-                'email' => $request->email
-            ]);
+            if (!empty($request->email)){
+                Newsletter::create([
+                    'email' => $request->email
+                ]);
+                toastr()->success('Thank you for subscribing.');
+            }else {
+                toastr()->error('Please provide email to subscribe to our newsletter.');
+            }
         }else {
             toastr()->success('You are already subscribe.');
         }
