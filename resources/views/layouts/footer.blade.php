@@ -6,9 +6,9 @@
 
           <div class="col-lg-4 col-md-6 footer-info">
             <h5>{{ setting('site.title') }}</h5>
-            <p>{{ setting('site.mission') }}</p>
-            <p>{{ setting('site.objective') }}</p>
-            <p>{{ setting('site.vission') }}</p>
+            <p>{{ setting('content.mission') }}</p>
+            <p>{{ setting('content.objective') }}</p>
+            <p>{{ setting('content.vission') }}</p>
 
           </div>
 
