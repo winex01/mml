@@ -5,8 +5,8 @@
 	@include('services')
 	@include('policy')
 	@include('portfolio')
-	@include('testimonials')
-	@include('team')
 	@include('clients')
+	@include('team')
+	@include('testimonials')
 	@include('contacts')
 @endsection
