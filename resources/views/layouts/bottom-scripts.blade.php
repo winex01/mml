@@ -21,3 +21,5 @@
   <script src="{{ asset('js/main.js') }}"></script>
   @toastr_js
   @toastr_render
+
+  @stack('js')
