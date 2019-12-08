@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ContactUsRequest;
 use App\Notifications\ContactUs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Notification;
@@ -14,7 +15,7 @@ class ContactFormSubmitController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ContactUsRequest $request)
     {
         Notification::route('mail', setting('company.email'))
             ->notify(new ContactUs(

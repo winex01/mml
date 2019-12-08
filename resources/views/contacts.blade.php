@@ -41,20 +41,38 @@
               <form action="{{ route('contact.submit') }}" method="POST" role="form" {{-- class="contactForm" --}}>
                 @csrf
                 <div class="form-row">
+
                   <div class="form-group col-lg-6">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
+                    <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Your Name" value="{{ old('name') }}"/>
+                    @error('name')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                   </div>
+
                   <div class="form-group col-lg-6">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
+                    <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="email" placeholder="Your Email" value="{{ old('email') }}"/>
+                    @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
                   </div>
+
                 </div>
+
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
+                  <textarea class="form-control @error('message') is-invalid @enderror" name="message" rows="5" data-rule="required" placeholder="Message">{{ old('message') }}</textarea>
+                  @error('message')
+                      <span class="invalid-feedback" role="alert">
+                          <strong>{{ $message }}</strong>
+                      </span>
+                  @enderror
                 </div>
+
                 <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+
               </form>
             </div>
           </div>
