@@ -16,11 +16,11 @@ class ContactFormSubmitController extends Controller
      */
     public function store(Request $request)
     {
-        Notification::route('mail', 'winnie131212592@gmail.com')
+        Notification::route('mail', setting('company.email'))
             ->notify(new ContactUs(
-                'Winnie A. Damayo',
-                'winnie131212592@gmail.com',
-                'Lorem ipsum dolor test contact. one two three sume of the next sample expre.'
+                $request->name,
+                $request->email,
+                $request->message
             ));
 
         toastr()->success('Thank you for reaching us, We will contact you soon.');
