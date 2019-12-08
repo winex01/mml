@@ -24,8 +24,11 @@ class HomeController extends Controller
         $portfolios = Portfolio::all();
         $categories = PortfolioCategory::all();
 
-        $file = json_decode($businessPermit->file);
-        $file = $file[0]->download_link;
+        $file = '';
+        if (!empty($businessPermit)) {
+            $file = json_decode($businessPermit->file);
+            $file = $file[0]->download_link;
+        }
 
         
         return view('index', compact(
