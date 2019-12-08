@@ -1,4 +1,5 @@
 
+<section id="newsletter">
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -48,7 +49,8 @@
             <p>
               {{ setting('content.newsletter') }}
             </p>
-            <form action="" method="post">
+            <form action="{{ route('subscribe.newsletter') }}" method="post">
+              @csrf
               <input type="email" name="email"><input type="submit"  value="Subscribe">
             </form>
           </div>
@@ -70,4 +72,5 @@
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </footer><!-- #footer 
+  </footer>
+</section>

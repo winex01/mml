@@ -19,7 +19,7 @@ Route::get('/organizational-chart', 'PolicyAndOtherController@organizationalChar
 Route::get('/permit', 'PolicyAndOtherController@permit')->name('permit');
 Route::get('/portfolio/{id}', 'PortfolioController@show' )->name('portfolio');
 Route::post('/contact', 'ContactFormSubmitController@store')->name('contact.submit');
-
+Route::post('/newsletter', 'NewsletterController@store')->name('subscribe.newsletter');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
