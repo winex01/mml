@@ -6,7 +6,7 @@
 	@include('policy')
 	@include('portfolio')
 	@include('clients')
-	@include('team')
-	@include('testimonials')
+	{{-- @include('team') --}}
+	{{-- @include('testimonials') --}}
 	@include('contacts')
 @endsection
