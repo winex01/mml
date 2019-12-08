@@ -17,6 +17,7 @@ Route::get('/safety-policies/', 'PolicyAndOtherController@safetyPolicies')->name
 Route::get('/quality-policy-statement/', 'PolicyAndOtherController@qualityPolictyStatement')->name('quality.policy.statement');
 Route::get('/organizational-chart', 'PolicyAndOtherController@organizationalChart')->name('organizational.chart');
 Route::get('/permit', 'PolicyAndOtherController@permit')->name('permit');
+Route::get('/portfolio/{id}', 'PortfolioController@show' )->name('portfolio');
 
 
 Route::group(['prefix' => 'admin'], function () {
