@@ -45,7 +45,9 @@
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Subscribe to get latest news and updates directly from us.</p>
+            <p>
+              {{ setting('content.newsletter') }}
+            </p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit"  value="Subscribe">
             </form>
