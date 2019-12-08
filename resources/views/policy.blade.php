@@ -43,7 +43,7 @@
                 <i class="fa fa-envelope-open-o"></i>
               <div class="card-body">
                 <h5 class="card-title">DTI Business Permit</h5>
-                <a href="#" class="readmore">More Details </a>
+                <a href="{{ Storage::disk(config('voyager.storage.disk'))->url($file) ?: '' }}" class="readmore" target="_blank">More Details </a>
               </div>
             </div>
           </div>

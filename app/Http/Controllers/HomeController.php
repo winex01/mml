@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\BusinessPermit;
 use App\Service;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,10 @@ class HomeController extends Controller
     public function index()
     {
         $services = Service::all();
-        return view('index', compact('services'));
+        $businessPermit = BusinessPermit::latest()->first();
+        $file = json_decode($businessPermit->file);
+        $file = $file[0]->download_link;
+        return view('index', compact('services', 'file'));
     }
 
    

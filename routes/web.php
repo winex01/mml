@@ -16,6 +16,7 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/safety-policies/', 'PolicyAndOtherController@safetyPolicies')->name('safety.policies');
 Route::get('/quality-policy-statement/', 'PolicyAndOtherController@qualityPolictyStatement')->name('quality.policy.statement');
 Route::get('/organizational-chart', 'PolicyAndOtherController@organizationalChart')->name('organizational.chart');
+Route::get('/permit', 'PolicyAndOtherController@permit')->name('permit');
 
 
 Route::group(['prefix' => 'admin'], function () {
