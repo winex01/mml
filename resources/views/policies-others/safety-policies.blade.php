@@ -10,7 +10,7 @@
 
     <div class="row about-container">
       <div class="col-lg-6 content order-lg-1 order-2">
-        {!! html_entity_decode(setting('site.safety_policies')) !!}
+        {!! html_entity_decode(setting('content.safety_policies')) !!}
       </div>
 
       <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">

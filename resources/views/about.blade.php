@@ -8,7 +8,7 @@
     <!-- about -->
     <div class="row about-container">
       <div class="col-lg-6 content order-lg-1 order-2">
-        {!! setting('site.about_us') !!}
+        {!! setting('content.about_us') !!}
       </div>
 
       <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
@@ -27,7 +27,7 @@
           <div class="icon"><i class="fa fa-shopping-bag"></i></div>
           <h4 class="title"><a href="javascript:void(0)">VISION</a></h4>
           <p class="description">
-            {!! setting('site.vission') !!}
+            {!! setting('content.vission') !!}
           </p>
         </div>
 
@@ -35,7 +35,7 @@
           <div class="icon"><i class="fa fa-photo"></i></div>
           <h4 class="title"><a href="javascript:void(0)">MISSION</a></h4>
           <p class="description">
-            {!! setting('site.mission') !!}
+            {!! setting('content.mission') !!}
           </p>
         </div>
 
@@ -43,7 +43,7 @@
           <div class="icon"><i class="fa fa-bar-chart"></i></div>
           <h4 class="title"><a href="javascript:void(0)">OBJECTIVES</a></h4>
           <p class="description">
-            {!! setting('site.objective') !!}
+            {!! setting('content.objective') !!}
           </p>
         </div>
       </div>

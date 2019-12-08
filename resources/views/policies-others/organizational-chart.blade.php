@@ -6,7 +6,7 @@
 
     <div class="text-center">
       <h3 class="ml-4">Organizational Chart</h3>
-	  <img src="{{ Voyager::image( Voyager::setting("site.organizational_chart")) }}" class="img-responsive" alt="...">
+	  <img src="{{ Voyager::image( Voyager::setting("content.organizational_chart")) }}" class="img-responsive" alt="...">
 	</div>
 
   </div>
