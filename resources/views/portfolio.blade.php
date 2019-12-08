@@ -9,8 +9,8 @@
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              @foreach($portfolios as $portfolio)
-                <li data-filter=".filter-{{ $portfolio->id }}">{{ $portfolio->title }}</li>
+              @foreach($categories as $category)
+                <li data-filter=".filter-{{ $category->id }}">{{ $category->description }}</li>
               @endforeach
             </ul>
           </div>
@@ -18,7 +18,7 @@
 
         <div class="row portfolio-container">
           @foreach($portfolios as $portfolio)
-            <div class="col-lg-4 col-md-6 portfolio-item filter-{{ $portfolio->id }}">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-{{ $portfolio->portfolio_category_id }}">
               <div class="portfolio-wrap">
                 <img src="{{ Voyager::image($portfolio->thumbnail('medium', 'cover')) }}" class="img-fluid" alt="">
                 <div class="portfolio-info">

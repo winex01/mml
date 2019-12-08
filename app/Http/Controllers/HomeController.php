@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\BusinessPermit;
 use App\Client;
 use App\Portfolio;
+use App\PortfolioCategory;
 use App\Service;
 use Illuminate\Http\Request;
 
@@ -21,17 +22,17 @@ class HomeController extends Controller
         $businessPermit = BusinessPermit::latest()->first();
         $clients = Client::all();
         $portfolios = Portfolio::all();
+        $categories = PortfolioCategory::all();
 
         $file = json_decode($businessPermit->file);
         $file = $file[0]->download_link;
-
-        clock($portfolios);
 
         return view('index', compact(
             'services', 
             'file',
             'clients',
-            'portfolios'
+            'portfolios',
+            'categories'
         ));
     }
 
