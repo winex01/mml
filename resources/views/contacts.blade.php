@@ -38,7 +38,8 @@
             <div class="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
+              <form action="{{ route('contact.submit') }}" method="POST" role="form" class="contactForm">
+                @csrf
                 <div class="form-row">
                   <div class="form-group col-lg-6">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />

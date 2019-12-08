@@ -18,6 +18,7 @@ Route::get('/quality-policy-statement/', 'PolicyAndOtherController@qualityPolict
 Route::get('/organizational-chart', 'PolicyAndOtherController@organizationalChart')->name('organizational.chart');
 Route::get('/permit', 'PolicyAndOtherController@permit')->name('permit');
 Route::get('/portfolio/{id}', 'PortfolioController@show' )->name('portfolio');
+Route::post('/contact', 'ContactFormSubmitController@store')->name('contact.submit');
 
 
 Route::group(['prefix' => 'admin'], function () {

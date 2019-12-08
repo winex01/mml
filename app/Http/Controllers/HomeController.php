@@ -27,6 +27,7 @@ class HomeController extends Controller
         $file = json_decode($businessPermit->file);
         $file = $file[0]->download_link;
 
+        
         return view('index', compact(
             'services', 
             'file',

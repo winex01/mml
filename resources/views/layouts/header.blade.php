@@ -26,5 +26,6 @@
 
   <!-- Main Stylesheet File -->
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+  @toastr_css
 
 </head>
